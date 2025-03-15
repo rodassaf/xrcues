@@ -1,0 +1,177 @@
+{
+    "UserAwareness": 
+    [ 
+        { 
+            "category" : "Eye Gaze",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "Face Direction",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Perspective and Frustum",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Position",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Identification",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "Intention",
+            "subcategory" : "Teleport",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "Intention",
+            "subcategory" : "Iteration Proposal",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "Intention",
+            "subcategory" : "User-User Interaction",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User-User Relations",
+            "subcategory" : "Interactions",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User-User Relations",
+            "subcategory" : "Non-verbal Communication",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User-Object Relations",
+            "subcategory" : "Selection and Manipulation",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User-Object Relations",
+            "subcategory" : "Simultaneous Select and Manipulation",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User-Object Relations",
+            "subcategory" : "Annotation",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User-Object Relations",
+            "subcategory" : "Interest Zone",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Status",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Active Tool",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Roles and Abilities",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Presence",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        },
+
+        { 
+            "category" : "User Embodiment",
+            "subcategory" : "",
+            "visualCues" : [ "rays", "Pointer", "Avatar" ],
+            "bibliography" : [ "Font1", "Font2" ],
+            "description" : "Blablabla",
+            "image" : "Path"
+        }
+    ]
+
+
+}
