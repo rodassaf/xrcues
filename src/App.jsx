@@ -1,33 +1,42 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router";
+import Typography from '@mui/material/Typography';
+import ResponsiveAppBar from './ResponsiveBar.jsx'
+import Box from '@mui/material/Box';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [page, setPage] = useState("")
+
+  const handleButtonClick = (buttonName) => {
+    //console.log("Button clicked in AppBar:", buttonName);
+    setPage(buttonName);
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Box sx={{ width: "100vw" }}>
+      <ResponsiveAppBar getButtonCliked={handleButtonClick} />
+    </Box>
+    <Box
+        sx={{
+          width: '100%',
+          height: 'fit-content',
+          borderRadius: 1,
+          marginTop: '2em',
+          marginLeft: '2em'
+        }}
+      >
+    <Typography variant="h5"> How users perceive
+      others during collaborative tasks? The possibility of knowing
+      where the users are, where they are looking at, their intentions,
+      and which task they are performing enhances communication
+      and, consequently, collaboration. The crucial design challenges to
+      support collaboration lie in providing sufficient awareness of other
+      users.
+    </Typography>
+    </Box>
     </>
   )
 }
