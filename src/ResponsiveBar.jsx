@@ -9,9 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import GroupWorkIcon from '@mui/icons-material/GroupWork';
-
-const pages = ['XR Awareness and Visual Cues', 'Method' , 'About'];
+import DashboardIcon from '@mui/icons-material/Dashboard';
+const pages = ['XR Awareness & Visual Cues', 'Method' , 'About'];
 
 function ResponsiveAppBar( {getButtonCliked} ) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,61 +26,64 @@ function ResponsiveAppBar( {getButtonCliked} ) {
 
 
   return (
-    <AppBar position="sticky">
-      <Container maxWidth="false">
-        <Toolbar disableGutters>
-          <GroupWorkIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-        
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <GroupWorkIcon sx={{ display: { xs: 'flex', md: 'none' } }} />
+    <div style={{display: "flex", justifyContent: "center"}}>
+        <AppBar position="sticky" sx={{width: "60%", borderRadius: "62px", marginTop: "2em" }}>
+        <Container maxWidth="false" >
+            <Toolbar disableGutters>
+            <DashboardIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 3, fontSize: 40 }} />
+            
+            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+                >
+                <MenuIcon />
+                </IconButton>
+                <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: 'block', md: 'none' } }}
+                >
+                {pages.map((page) => (
+                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                    </MenuItem>
+                ))}
+                </Menu>
+            </Box>
+            
+            <DashboardIcon sx={{ display: { xs: 'flex', md: 'none' }, marginRight: 3, fontSize: 30 }} />
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'left' }}>
+                {pages.map((page) => (
+                <Button
+                    key={page}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: 'white', display: 'block', mr: 2 }}
+                >
+                    {page}
+                </Button>
+                ))}
+            </Box>
+            </Toolbar>
+        </Container>
+        </AppBar>
+    </div>
   );
 }
 export default ResponsiveAppBar;
