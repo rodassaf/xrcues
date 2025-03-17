@@ -8,7 +8,7 @@
             "bibliography" : [ "Font1", "Font2" ],
             "miniDescription": "",
             "description" : "Eye-gaze awareness enables individuals to use natural nonverbal cues to perceive where others are looking in real time. Research has shown that eye-gaze tracking enhances user interaction and improves collaborative task performance [NB20]. The most commonly used visual cues for eye-gaze awareness include pointers, rays, and avatars, which help users understand their collaborators' focus. One study [MSKB16] developed a prototype that shares gaze direction using a pointer, facilitated by special glasses. Their user study found that gaze sharing not only improved collaboration but also strengthened the sense of connection among remote participants. Another study [RPM21] explored the use of avatars to enhance real-world movements with subtle redirected gazes, further enriching communication in virtual environments",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/eyegaze.jpg",
             "image" : "Path"
         },
 
@@ -18,7 +18,7 @@
             "visualCues" : [ "Rays", "FOV Shape", "Pointer", "Orientation" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Following the same principle of natural nonverbal cues from eye gaze, the face direction allows users to identify in which direction a collaborator's head is positioned. Rays, FoV shapes, pointers, and orientation are typical visual cues employed in this face direction awareness. One relevant study [PLI19] presented CoVAR, a novel MR remote collaboration system using AR and VR technology applying eye-gaze (using rays) and head-gaze (rays mixed with FoV shape) input. They discovered that gaze cues are crucial for improving remote collaboration by reducing task load. Further, a group of researchers [FAMR19] implemented a prototype with a ray emanating from the user's head direction. Interestingly, the ray was also useful for selection purposes. In a teleport task, in which one user brings another one into a collaborative jump, orientation cues are used to avoid motion sickness. The investigators [WKF19] developed a window and a compass (orientation cues) to limit jumping based on the navigator's viewing direction. Pointer cues were used in a study showing that sharing head pointers can improve performance, co-presence awareness, and user collaborative experiences [WZB21].",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/facedirection.jpg",
             "image" : "Path"
         },
 
@@ -28,7 +28,7 @@
             "visualCues" : [ "Point of View", "Scale", "FOV Shape" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "This awareness concerns knowing what others are looking at during the moment of the interaction. This awareness gives feedback on the direction and the area of another view range, enhancing the context and communication of the target subject. One research [PDE19] prototyped a visual cue based on FoV shape to indicate the individual's view range and direction. Also, it is possible to see through another collaborator's eyes (using the point of view cue) in a technique called AV-Snap-to-VR created by [PLLB17]. The mirrored user can snap to another user's head with an independent head orientation and minor control of their head position offset to avoid simulation sickness. Other authors [XHPW18] designed another innovative example of user perspective by manipulating the avatar scale. Users may change their size by scaling down their avatars so that others would be aware of these users' perspectives in a scene. Hence, the found cues were the point of view, scale, and FoV shape.",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userperspective.jpg",
             "image" : "Path"
         },
 
@@ -38,7 +38,7 @@
             "visualCues" : [ "Shadows", "Orientation" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "The awareness of the individual's location in the space during a collaborative experience. Similar to realworld scenarios where a person's position signifies their proximity to collaborators, different communication actions are required based on the distance between individuals. Interacting with closer users is inherently more straightforward than with those farther away. Shadows serve as cues, indicating the distance from a person to a wall and providing a sense of the spatial relationship between them [SMF15]. Additionally, visual cues such as bubble maps on mobile phones are employed to present user positions within the environment, enhancing awareness of individual locations [SMM17].",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userposition.jpg",
             "image" : "Path"
         },
 
@@ -48,7 +48,7 @@
             "visualCues" : [ "Avatar", "Text" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/useridentification.jpg",
             "image" : "Path"
         },
 
@@ -58,7 +58,7 @@
             "visualCues" : [ "Rays", "Virtual Volume", "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/intentionteleport.jpg",
             "image" : "Path"
         },
 
@@ -68,7 +68,7 @@
             "visualCues" : [ "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/intentioniteration.jpg",
             "image" : "Path"
         },
 
@@ -78,7 +78,7 @@
             "visualCues" : [ "Highlight" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/intentioninteractions.jpg",
             "image" : "Path"
         },
 
@@ -88,7 +88,7 @@
             "visualCues" : [ "Highlight" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/useruserinteraction.jpg",
             "image" : "Path"
         },
 
@@ -98,7 +98,7 @@
             "visualCues" : [ "Facial Expressions", "Hands" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userusernonverbal.jpg",
             "image" : "Path"
         },
 
@@ -108,7 +108,7 @@
             "visualCues" : [ "Highlight", "Hands" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userobjectselect.jpg",
             "image" : "Path"
         },
 
@@ -118,7 +118,7 @@
             "visualCues" : [ "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userobjectsimultaneous.jpg",
             "image" : "Path"
         },
 
@@ -128,7 +128,7 @@
             "visualCues" : [ "Sketching" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userobjectannotation.jpg",
             "image" : "Path"
         },
 
@@ -138,7 +138,7 @@
             "visualCues" : [ "Rays", "Hands", "Pointer", "Symbol", "Virtual Volume" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userobjectinterestzone.jpg",
             "image" : "Path"
         },
 
@@ -148,7 +148,7 @@
             "visualCues" : [ "Virtual Volume" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userstatus.jpg",
             "image" : "Path"
         },
 
@@ -158,7 +158,7 @@
             "visualCues" : [ "Symbol" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/useractivetool.jpg",
             "image" : "Path"
         },
 
@@ -168,7 +168,7 @@
             "visualCues" : [ "Symbol", "Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userrole.jpg",
             "image" : "Path"
         },
 
@@ -178,7 +178,7 @@
             "visualCues" : [ "Avatar", "Shadows", "Full-body Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userpresence.jpg",
             "image" : "Path"
         },
 
@@ -188,7 +188,7 @@
             "visualCues" : [ "Hands", "Full-body Avatar", "Controllers" ],
             "bibliography" : [ "Font1", "Font2" ],
             "description" : "Blablabla",
-            "thumbnail" : "Path",
+            "thumbnail" : "./src/assets/thumbnail/userembodiment.jpg",
             "image" : "Path"
         }
     ]
