@@ -2,50 +2,74 @@ import './App.css'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ActionAreaCard from './card.jsx';
+import {useState, useEffect} from 'react'
 
+function Home({setPage}) {
+    const [list, setList] = useState([])
 
-function Home() {
+    useEffect(() => {
 
-  return (
-    <>
-    <Box
-        sx={{
+        fetch("./src/assets/json/awareness.json")
+            .then(response => response.json())
+            .then(data => {
+                setList(data.UserAwareness)
+            })
+            .catch(error => console.error("Error fetching JSON:", error));
+
+    }, []);
+
+    return (
+        <> < Box sx = {{
           maxWidth: '1200px',
           height: 'fit-content',
           borderRadius: 1,
           margin: 'auto'
-        }}
-      >
-    <Typography id="title"variant="h3" sx={{marginTop:'2em', marginLeft:'1em', marginRight:'1em', fontWeight: 300 }} > 
-    The following classification outlines key user awareness categories and their 
-    corresponding visual cues. 
-    </Typography>
+        }} > <Typography
+            id="title"
+            variant="h3"
+            sx={{
+                marginTop: '2em',
+                marginLeft: '1em',
+                marginRight: '1em',
+                fontWeight: 300
+            }}>
+            The following classification outlines key user awareness categories and their
+            corresponding visual cues.
+        </Typography>
 
-    
-    
     </Box>
 
     <Box
         sx={{
-          maxWidth: '1200px',
-          height: 'fit-content',
-          borderRadius: 1,
-          margin: 'auto',
-          marginTop: '6em'
-          
-        }}
-      >
-        <div style={{marginLeft: '3em', marginRight: '3em', display:'flex', flexWrap: 'wrap', gap: '20px', marginBottom: '4em'}}>
-        <ActionAreaCard />
-        <ActionAreaCard />
-        <ActionAreaCard />
-        <ActionAreaCard />
-        <ActionAreaCard />
-        </div>
-      </Box>
+            maxWidth: '1200px',
+            height: 'fit-content',
+            borderRadius: 1,
+            margin: 'auto',
+            marginTop: '6em'
 
-    </>
-  )
+        }}>
+        <div
+            style={{
+                marginLeft: '3em',
+                marginRight: '3em',
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '20px',
+                marginBottom: '4em'
+            }}>
+            {list.map((awareness) => (<ActionAreaCard 
+                setPage={setPage}
+                key={awareness.id}
+                id={awareness.id}
+                thumbnail={awareness.thumbnail} 
+                category={awareness.category} 
+                subcategory={awareness.subcategory}  />))}
+
+        </div>
+    </Box>
+
+</>
+    )
 }
 
 export default Home

@@ -3,6 +3,7 @@
     [ 
         { 
             "category" : "Eye Gaze",
+            "id": 1,
             "subcategory" : "",
             "visualCues" : [ "Rays", "Pointer", "Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -14,6 +15,7 @@
 
         { 
             "category" : "Face Direction",
+            "id": 2,
             "subcategory" : "",
             "visualCues" : [ "Rays", "FOV Shape", "Pointer", "Orientation" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -24,6 +26,7 @@
 
         { 
             "category" : "User Perspective and Frustum",
+            "id": 3,
             "subcategory" : "",
             "visualCues" : [ "Point of View", "Scale", "FOV Shape" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -34,6 +37,7 @@
 
         { 
             "category" : "User Position",
+            "id": 4,
             "subcategory" : "",
             "visualCues" : [ "Shadows", "Orientation" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -44,6 +48,7 @@
 
         { 
             "category" : "User Identification",
+            "id": 5,
             "subcategory" : "",
             "visualCues" : [ "Avatar", "Text" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -54,6 +59,7 @@
 
         { 
             "category" : "Intention",
+            "id": 6,
             "subcategory" : "Teleport",
             "visualCues" : [ "Rays", "Virtual Volume", "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -64,6 +70,7 @@
 
         { 
             "category" : "Intention",
+            "id": 7,
             "subcategory" : "Iteration Proposal",
             "visualCues" : [ "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -74,6 +81,7 @@
 
         { 
             "category" : "Intention",
+            "id": 8,
             "subcategory" : "User-User Interaction",
             "visualCues" : [ "Highlight" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -84,6 +92,7 @@
 
         { 
             "category" : "User-User Relations",
+            "id": 9,
             "subcategory" : "Interactions",
             "visualCues" : [ "Highlight" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -94,6 +103,7 @@
 
         { 
             "category" : "User-User Relations",
+            "id": 10,
             "subcategory" : "Non-verbal Communication",
             "visualCues" : [ "Facial Expressions", "Hands" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -104,6 +114,7 @@
 
         { 
             "category" : "User-Object Relations",
+            "id": 11,
             "subcategory" : "Selection and Manipulation",
             "visualCues" : [ "Highlight", "Hands" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -114,6 +125,7 @@
 
         { 
             "category" : "User-Object Relations",
+            "id": 12,
             "subcategory" : "Simultaneous Select and Manipulation",
             "visualCues" : [ "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -124,6 +136,7 @@
 
         { 
             "category" : "User-Object Relations",
+            "id": 13,
             "subcategory" : "Annotation",
             "visualCues" : [ "Sketching" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -134,6 +147,7 @@
 
         { 
             "category" : "User-Object Relations",
+            "id": 14,
             "subcategory" : "Interest Zone",
             "visualCues" : [ "Rays", "Hands", "Pointer", "Symbol", "Virtual Volume" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -144,6 +158,7 @@
 
         { 
             "category" : "User Status",
+            "id": 15,
             "subcategory" : "",
             "visualCues" : [ "Virtual Volume" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -154,6 +169,7 @@
 
         { 
             "category" : "User Active Tool",
+            "id": 16,
             "subcategory" : "",
             "visualCues" : [ "Symbol" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -164,6 +180,7 @@
 
         { 
             "category" : "User Roles and Abilities",
+            "id": 17,
             "subcategory" : "",
             "visualCues" : [ "Symbol", "Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -174,6 +191,7 @@
 
         { 
             "category" : "User Presence",
+            "id": 18,
             "subcategory" : "",
             "visualCues" : [ "Avatar", "Shadows", "Full-body Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
@@ -184,6 +202,7 @@
 
         { 
             "category" : "User Embodiment",
+            "id": 19,
             "subcategory" : "",
             "visualCues" : [ "Hands", "Full-body Avatar", "Controllers" ],
             "bibliography" : [ "Font1", "Font2" ],
