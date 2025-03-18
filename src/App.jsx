@@ -13,7 +13,7 @@ function App() {
     //console.log("Button clicked in AppBar:", buttonName);
     if(buttonName == "About" || buttonName == "ABOUT")
       setPage(<About />);
-    if(buttonName == "XR AWARENESS & VISUAL CUES" || buttonName == "XR Awareness & Visual Cues")
+    if(buttonName == "XR.AWARENESS" || buttonName == "XR.Awareness")
       setPage(<Home setPage={setPage}/>);
     if(buttonName == "METHOD" || buttonName == "Method")
       setPage(<Method />);

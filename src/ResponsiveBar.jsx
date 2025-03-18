@@ -10,7 +10,12 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-const pages = ['XR Awareness & Visual Cues', 'Method' , 'About'];
+import SearchIcon from '@mui/icons-material/Search';
+import TextField from '@mui/material/TextField';
+import InputAdornment from '@mui/material/InputAdornment';
+
+const pages = ['XR.Awareness', 'Method' , 'About'];
+
 
 function ResponsiveAppBar( {getButtonCliked} ) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -67,7 +72,7 @@ function ResponsiveAppBar( {getButtonCliked} ) {
                 </Menu>
             </Box>
             
-            <DashboardIcon sx={{ display: { xs: 'flex', md: 'none' }, marginRight: 3, fontSize: 30 }} />
+            
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'left' }}>
                 {pages.map((page) => (
@@ -80,6 +85,29 @@ function ResponsiveAppBar( {getButtonCliked} ) {
                 </Button>
                 ))}
             </Box>
+                
+            
+            <TextField 
+                hiddenLabel
+                id="filled-hidden-label-small"
+                type="search"
+                defaultValue=""
+                slotProps={{
+                    input: {
+                      startAdornment: <InputAdornment position="start"><SearchIcon /></InputAdornment>,
+                    }
+                  }}
+                size="small"
+                sx={{ 
+                    "& .MuiOutlinedInput-root": { 
+                      borderRadius: "60px" // Change border-radius
+                    },
+                    marginRight: -1
+                  }}
+       
+            />
+  
+
             </Toolbar>
         </Container>
         </AppBar>
