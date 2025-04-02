@@ -89,6 +89,7 @@ function ResponsiveAppBar( {getButtonCliked} ) {
             
             <TextField 
                 hiddenLabel
+                onChange={()=>{console.log("a")}}
                 id="filled-hidden-label-small"
                 type="search"
                 defaultValue=""

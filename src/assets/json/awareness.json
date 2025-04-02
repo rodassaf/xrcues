@@ -6,7 +6,7 @@
             "id": 1,
             "subcategory" : "",
             "visualCues" : [ "Rays", "Pointer", "Avatar" ],
-            "bibliography" : [ "Font1", "Font2" ],
+            "bibliography" : [ "[NB20] NGUYEN H., BEDNARZ T.: User experience in collaborative  extended reality: Overview study. In International Conference on Virtual Reality and Augmented Reality (2020), Springer International Publishing, pp. 41–70. URL: http://dx.doi.org/10.1007/978-3-030-62655-6_3, doi:10.1007/78-3-030-62655-6\textunderscore3. 5, 6, 7, 9", "Font2" ],
             "miniDescription": "Eye-gaze awareness enables individuals to use natural nonverbal cues to perceive where others are looking in real time.",
             "description" : "Eye-gaze awareness enables individuals to use natural nonverbal cues to perceive where others are looking in real time. Research has shown that eye-gaze tracking enhances user interaction and improves collaborative task performance [NB20]. The most commonly used visual cues for eye-gaze awareness include pointers, rays, and avatars, which help users understand their collaborators' focus. One study [MSKB16] developed a prototype that shares gaze direction using a pointer, facilitated by special glasses. Their user study found that gaze sharing not only improved collaboration but also strengthened the sense of connection among remote participants. Another study [RPM21] explored the use of avatars to enhance real-world movements with subtle redirected gazes, further enriching communication in virtual environments",
             "thumbnail" : "./src/assets/thumbnail/eyegaze.jpg",

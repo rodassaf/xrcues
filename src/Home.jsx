@@ -68,6 +68,7 @@ function Home({setPage}) {
                 image={awareness.image}
                 visualCues={awareness.visualCues}
                 bibliography={awareness.bibliography}
+                description={awareness.description}
                 />))}
 
         </div>
