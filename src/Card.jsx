@@ -7,20 +7,21 @@ import CardActionArea from '@mui/material/CardActionArea';
 import Awareness from './Awareness';
 
 
-export default function ActionAreaCard({thumbnail, category, subcategory, id, setPage}) {
-    const handleCardClick = (id) => {
-        setPage(<Awareness category={category} />)
+export default function ActionAreaCard({thumbnail, category, subcategory, id, setPage, miniDescription, image, visualCues, bibliography}) {
+    const handleCardClick = (category, subcategory, image, visualCues, bibliography) => {
+        setPage(<Awareness category={category} subcategory={subcategory} image={image} visualCues={visualCues} bibliography={bibliography}/>)
     };
 
     return (
-        <Card onClick={() => handleCardClick(category)} 
+        <Card onClick={() => handleCardClick(category, subcategory, image, visualCues, bibliography )} 
             sx={{
                 maxWidth: 345,
-                height: 390
+                height: 400,
+                width: "100%"
             }}>
-            <CardActionArea>
+            <CardActionArea sx={ {height: 400} }>
                 <CardMedia component="img" height="260" image={thumbnail} alt="eye gaze"/>
-                <CardContent >
+                <CardContent sx={ {height: 140} } >
                     <Typography gutterBottom="gutterBottom" variant="h5" component="div">
                         {category}
                     </Typography>
@@ -32,8 +33,7 @@ export default function ActionAreaCard({thumbnail, category, subcategory, id, se
                         sx={{
                             color: 'text.secondary'
                         }}>
-                        Eye-gaze awareness enables individuals to use natural nonverbal cues to perceive
-                        where others are looking in real time.
+                        {miniDescription}
                     </Typography>
                 </CardContent>
             </CardActionArea>

@@ -7,7 +7,7 @@
             "subcategory" : "",
             "visualCues" : [ "Rays", "Pointer", "Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "miniDescription": "",
+            "miniDescription": "Eye-gaze awareness enables individuals to use natural nonverbal cues to perceive where others are looking in real time.",
             "description" : "Eye-gaze awareness enables individuals to use natural nonverbal cues to perceive where others are looking in real time. Research has shown that eye-gaze tracking enhances user interaction and improves collaborative task performance [NB20]. The most commonly used visual cues for eye-gaze awareness include pointers, rays, and avatars, which help users understand their collaborators' focus. One study [MSKB16] developed a prototype that shares gaze direction using a pointer, facilitated by special glasses. Their user study found that gaze sharing not only improved collaboration but also strengthened the sense of connection among remote participants. Another study [RPM21] explored the use of avatars to enhance real-world movements with subtle redirected gazes, further enriching communication in virtual environments",
             "thumbnail" : "./src/assets/thumbnail/eyegaze.jpg",
             "image" : "./src/assets/image/EyeGaze.png"
@@ -19,6 +19,7 @@
             "subcategory" : "",
             "visualCues" : [ "Rays", "FOV Shape", "Pointer", "Orientation" ],
             "bibliography" : [ "Font1", "Font2" ],
+            "miniDescription":"Face direction allows individuals to identify in which direction a collaborator's head is positioned.",
             "description" : "Following the same principle of natural nonverbal cues from eye gaze, the face direction allows users to identify in which direction a collaborator's head is positioned. Rays, FoV shapes, pointers, and orientation are typical visual cues employed in this face direction awareness. One relevant study [PLI19] presented CoVAR, a novel MR remote collaboration system using AR and VR technology applying eye-gaze (using rays) and head-gaze (rays mixed with FoV shape) input. They discovered that gaze cues are crucial for improving remote collaboration by reducing task load. Further, a group of researchers [FAMR19] implemented a prototype with a ray emanating from the user's head direction. Interestingly, the ray was also useful for selection purposes. In a teleport task, in which one user brings another one into a collaborative jump, orientation cues are used to avoid motion sickness. The investigators [WKF19] developed a window and a compass (orientation cues) to limit jumping based on the navigator's viewing direction. Pointer cues were used in a study showing that sharing head pointers can improve performance, co-presence awareness, and user collaborative experiences [WZB21].",
             "thumbnail" : "./src/assets/thumbnail/facedirection.jpg",
             "image" : "./src/assets/image/faceDirection.png"
@@ -30,6 +31,7 @@
             "subcategory" : "",
             "visualCues" : [ "Point of View", "Scale", "FOV Shape" ],
             "bibliography" : [ "Font1", "Font2" ],
+            "miniDescription":"What users are looking at.",
             "description" : "This awareness concerns knowing what others are looking at during the moment of the interaction. This awareness gives feedback on the direction and the area of another view range, enhancing the context and communication of the target subject. One research [PDE19] prototyped a visual cue based on FoV shape to indicate the individual's view range and direction. Also, it is possible to see through another collaborator's eyes (using the point of view cue) in a technique called AV-Snap-to-VR created by [PLLB17]. The mirrored user can snap to another user's head with an independent head orientation and minor control of their head position offset to avoid simulation sickness. Other authors [XHPW18] designed another innovative example of user perspective by manipulating the avatar scale. Users may change their size by scaling down their avatars so that others would be aware of these users' perspectives in a scene. Hence, the found cues were the point of view, scale, and FoV shape.",
             "thumbnail" : "./src/assets/thumbnail/userperspective.jpg",
             "image" : "./src/assets/image/userPerspective.png"
@@ -41,6 +43,7 @@
             "subcategory" : "",
             "visualCues" : [ "Shadows", "Orientation" ],
             "bibliography" : [ "Font1", "Font2" ],
+            "miniDescription":"The awareness of the individual's location in the space.",
             "description" : "The awareness of the individual's location in the space during a collaborative experience. Similar to realworld scenarios where a person's position signifies their proximity to collaborators, different communication actions are required based on the distance between individuals. Interacting with closer users is inherently more straightforward than with those farther away. Shadows serve as cues, indicating the distance from a person to a wall and providing a sense of the spatial relationship between them [SMF15]. Additionally, visual cues such as bubble maps on mobile phones are employed to present user positions within the environment, enhancing awareness of individual locations [SMM17].",
             "thumbnail" : "./src/assets/thumbnail/userposition.jpg",
             "image" : "./src/assets/image/userPosition.png"
@@ -52,7 +55,8 @@
             "subcategory" : "",
             "visualCues" : [ "Avatar", "Text" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Help users to identify other users in a collaborative session.",
+            "description" : "Its main purpose is to help users to identify other users. So, to achieve that, avatars and text are the experienced visual cues more commonly found in the literature. A prototype developed by [ZSM19] projected an avatar during an interaction so users could recognize who they were talking to with no additional information. Nevertheless, when projecting personalized avatars is not implemented, text cues are helpful to identify users.",
             "thumbnail" : "./src/assets/thumbnail/useridentification.jpg",
             "image" : "./src/assets/image/userIdentification.png"
         },
@@ -63,7 +67,8 @@
             "subcategory" : "Teleport",
             "visualCues" : [ "Rays", "Virtual Volume", "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Intention to move long or short distances.",
+            "description" : "Teleporting is a navigation method in which users change spatial positions, skipping the transition between the start and final destination. It enables users to move long distances virtually when the physical space is smaller than the virtual world. Rays, virtual volume, and ghosting are visual cues that create awareness of teleport intention. A found study [WKF19] investigated the action of teleporting using rays in a collaborative task. They implemented a prototype that allows users to bring another collaborator to a new position by teleporting together. So, they have created three variations of a multi-ray jumping technique, consisting of a secondary ray for the passive user to be aware of the intention to teleport. Otherwise, they would feel disoriented and suffer from motion sickness. Thus, the teleport intention cues are proposed to warn a user that a collaborator will change position and bring this passive user to a new location in the virtual world. One good example of using ghosting and virtual volumes to indicate an intended teleport task from another user was developed by [XHPW18]. Individuals may create and position another user's avatar with different dimensions to create an awareness of the teleport destination for that user. This special avatar is denoted as a parallel avatar and has a ghosting aspect. In addition, passive travelers get a notification with a virtual volume close to their eyes, indicating the intention of another user to communicate in another location. To teleport, users need to select using a controller on this virtual volume and jump to the final destination.",
             "thumbnail" : "./src/assets/thumbnail/intentionteleport.jpg",
             "image" : "./src/assets/image/intentionTeleport.png"
         },
@@ -74,7 +79,8 @@
             "subcategory" : "Iteration Proposal",
             "visualCues" : [ "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Intention to propose a design iteration on an object.",
+            "description" : "Scenes may need to be rearranged with new design versions or iterations, including positioning, scaling, and rotating operations. So, aiming at not losing the original state, users can be aware of new designs proposed by other collaborators using ghosting cues. This awareness is developed by [PMR19] in which it is possible to compare two object versions simultaneously (side by side).",
             "thumbnail" : "./src/assets/thumbnail/intentioniteration.jpg",
             "image" : "./src/assets/image/intentionIterationProposal.png"
         },
@@ -85,7 +91,8 @@
             "subcategory" : "User-User Interaction",
             "visualCues" : [ "Highlight" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Intention to start a communication with other users.",
+            "description" : "Starting communication with other users may not be clear in an immersive environment due to a lack of body representation or facial expressions. Thus, calling the attention of collaborators to start an interaction is the main intention of this user awareness. Highlighting is the usual cue observed in the literature. For instance, [SMM17] developed a mechanism called bubble maps, which project shapes on the floor indicating an intention to talk. So, these shapes are highlighted based on people's proximity, pointing out the users' interaction intentions.",
             "thumbnail" : "./src/assets/thumbnail/intentioninteractions.jpg",
             "image" : "./src/assets/image/intentionUserUserInteraction.png"
         },
@@ -96,7 +103,8 @@
             "subcategory" : "Interactions",
             "visualCues" : [ "Highlight" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"It is the awareness when users interact with others during a task.",
+            "description" : "It is the awareness when users interact with others during a task. Typically, users should be aware if a collaborator is talking or presenting something to others. The typical cues found in the literature are highlights. A prototype [SMM17] highlights a group when they are closer and start socializing, making other people aware of that social interaction.",
             "thumbnail" : "./src/assets/thumbnail/useruserinteraction.jpg",
             "image" : "./src/assets/image/userUserRelationsInteractions.png"
         },
@@ -107,7 +115,8 @@
             "subcategory" : "Non-verbal Communication",
             "visualCues" : [ "Facial Expressions", "Hands" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Nonverbal communication signals that humans use to communicate.",
+            "description" : "It is nonverbal communication signals that humans use to communicate more naturally. Gestures and facial expressions are typical fundamental components of language that contribute to a spoken message. A relevant paper [MSKB16] investigated a novel technique to explore how effective the empathy glasses were at supporting remote collaboration by using facial expression cues. In addition, hands are familiar cues to express human gestures during a conversation. [HKBA19] presented a study that showed the benefits of using hands for remote guidance with sketching cues for more complex collaborative tasks.",
             "thumbnail" : "./src/assets/thumbnail/userusernonverbal.jpg",
             "image" : "./src/assets/image/userUserRelationsNonVerbal.png"
         },
@@ -118,7 +127,8 @@
             "subcategory" : "Selection and Manipulation",
             "visualCues" : [ "Highlight", "Hands" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Users select or manipulate shared objects in a virtual world.",
+            "description" : "When users select or manipulate shared objects in a virtual world, collaborators should be aware of that information, e.g., to avoid editing the same mesh simultaneously when this is not possible. Also, this awareness clarifies which tasks are being executed by individual users. In the Spacetime prototype [XHPW18], users can reach objects using rays to brush over a set of objects. Once selected, these objects have their wireframe highlighted or collected inside a container, which can be manipulated to move or scale objects. Another visual cue commonly used is the hands, which can be digitally represented and are crucial to indicate when a user is reaching to grab an object, for example.",
             "thumbnail" : "./src/assets/thumbnail/userobjectselect.jpg",
             "image" : "./src/assets/image/userObjectRelationsSelect.png"
         },
@@ -129,7 +139,8 @@
             "subcategory" : "Simultaneous Select and Manipulation",
             "visualCues" : [ "Ghosting" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Users select or manipulate at the same time shared objects in a virtual world.",
+            "description" : "Objects in a virtual environment can be selected and manipulated in some collaborative systems. When these options are available, it is important to warn other users that one collaborator holds a specific object. That avoids unexpected changes in the scene and a lack of context during these tasks. Ghosting is the visual cue used to generate this awareness. For instance, [XHPW18] denoted a concept called parallel object, in which users can select and manipulate the same object. So, to alert users they have chosen an already taken object, the system changes the object's property, giving an aspect of a ghost.",
             "thumbnail" : "./src/assets/thumbnail/userobjectsimultaneous.jpg",
             "image" : "./src/assets/image/userObjectRelationSimulatenousSelect.png"
         },
@@ -140,7 +151,8 @@
             "subcategory" : "Annotation",
             "visualCues" : [ "Sketching" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription": "Communicate attaching annotations on scene objects.",
+            "description" : "It is a way of communication among users attached to a scene object. Annotations are crucial in asynchronous collaboration by conveying messages relevant to a specific object. Notably, [WBB20a] researched sharing virtual non-verbal sketching cues to enhance remote collaboration. They have developed the concept of shared AR Annotations (ARAs), which can enhance co-presence awareness.",
             "thumbnail" : "./src/assets/thumbnail/userobjectannotation.jpg",
             "image" : "./src/assets/image/userObjectRelationAnnotation.png"
         },
@@ -151,7 +163,8 @@
             "subcategory" : "Interest Zone",
             "visualCues" : [ "Rays", "Hands", "Pointer", "Symbol", "Virtual Volume" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Context area or zone that makes collaboration task clearer.",
+            "description" : "During collaborative tasks, it can be critical to point out an object or an area to create context and make the collaboration task clearer. This is mainly observed in a real-world situation where individuals use hand gestures to point something to another person during a conversation. It is a natural behavior that might also happen in an immersive environment but with more possibilities due to the extension of technology. A good example is the possibility of pointing and seeing occluded objects by creating a transparency area (transparency technique) or by cutting a region away (cutaway technique) using rays and pointers cues [AKK11]. [CLL21] studied another use of rays, where they compared the usability of pointing lines versus moving tracks techniques to point out objects before selecting them. Their results showed that pointing lines had a better performance and ease of control over motion tracks. Also, the interest zone identification can be facilitated by adjusting the user's finger direction in a virtual environment [SDM19]. This technique, called warping deixis, is useful for distant targets in which observers frequently misinterpret the target of a pointing gesture. Virtual volumes were also a visual cue used as spatial area volume [ZBZ23]. According to the study, they have contributed to a faster task performance time. Finally, a prototype created by [WZW20] allowed users to leave symbols in the form of a flare on the object's surface to indicate an interesting zone to other collaborators.",
             "thumbnail" : "./src/assets/thumbnail/userobjectinterestzone.jpg",
             "image" : "./src/assets/image/userObjectRelationInterestZone.png"
         },
@@ -162,7 +175,8 @@
             "subcategory" : "",
             "visualCues" : [ "Virtual Volume" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"The current status of a user.",
+            "description" : "It indicates and shares the current status of a user with collaborators. The status could indicate different information like the lack of sound (user is not listening) or a concentration requirement (user is focused on a specific task) as demonstrated in a study conducted by [PBHM19]. They have added a virtual volume cue to aid users in being aware of the status of others. So, placing people into a virtual environment shield made them focus on the task without being disturbed.",
             "thumbnail" : "./src/assets/thumbnail/userstatus.jpg",
             "image" : "./src/assets/image/userStatus.png"
         },
@@ -173,7 +187,8 @@
             "subcategory" : "",
             "visualCues" : [ "Symbol" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Indicates and shares the active tool a user is holding.",
+            "description" : "It indicates and shares the active tool a user is holding. Before interacting with the scene, a tool icon or a symbol cue can be shown over the user avatar to indicate which active tool users are using [WBB20b].",
             "thumbnail" : "./src/assets/thumbnail/useractivetool.jpg",
             "image" : "./src/assets/image/userActiveTool.png"
         },
@@ -184,7 +199,8 @@
             "subcategory" : "",
             "visualCues" : [ "Symbol", "Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Indicate different roles and interaction possibilities from users.",
+            "description" : "In a group session, individuals may have different roles and interaction possibilities. One way to alert users of a role is using symbol cues to identify their roles quickly. A significant example was developed by [WF21], which investigated a group navigation theme from a tour perspective. To help users identify the tour guide among all people, researchers have added a crown symbol cue on top of the guide avatar so other individuals would be aware of that user role. Also, in a paper authored by [WZW20], users' avatars were substituted with virtual reality (VR) glasses to symbolize participants who were engaged in augmented reality (AR) sessions rather than VR. This visual representation effectively conveyed an asymmetrical setup to all collaborators.",
             "thumbnail" : "./src/assets/thumbnail/userrole.jpg",
             "image" : "./src/assets/image/userRoles.png"
         },
@@ -195,7 +211,8 @@
             "subcategory" : "",
             "visualCues" : [ "Avatar", "Shadows", "Full-body Avatar" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"Make users aware that other collaborators are present in the same session.",
+            "description" : "In synchronous collaboration, when more than one user is engaged, it is essential to make users aware that other collaborators are present at the exact moment. Avatars and fullbody avatars are the systems' most common visual cues to indicate users' presence. Also, shadows on a wall can project users on a screen, indicating their presence in a prototype developed by [SMM17].",
             "thumbnail" : "./src/assets/thumbnail/userpresence.jpg",
             "image" : "./src/assets/image/userPresence.png"
         },
@@ -206,7 +223,8 @@
             "subcategory" : "",
             "visualCues" : [ "Hands", "Full-body Avatar", "Controllers" ],
             "bibliography" : [ "Font1", "Font2" ],
-            "description" : "Blablabla",
+            "miniDescription":"It represents the user's body in a digital space.",
+            "description" : "It represents the user's body in a digital space, addressing the user's representation of physicality in remote work [ELT19]. The represented body parts can enhance natural non-verbal communication (poses and gestures) between users, leveraging collaboration. [WWJ19] presented one interesting example using full-body avatars (depth-sensor-based) to depict users. With three different avatar control conditions developed (first-person, third-person, and a real-world view), participants indicated better performance in the communication scenario regarding non-verbal behavior cues. Also, hands are a simple cue to denote this particular part of the body, but sometimes, they are not added to the system, which includes a pair of controller cues. Because they are attached to human hands, controllers can represent this body part and be used as a hand in a collaboration task.",
             "thumbnail" : "./src/assets/thumbnail/userembodiment.jpg",
             "image" : "./src/assets/image/userEmbodiment.png"
         }

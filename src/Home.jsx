@@ -63,7 +63,12 @@ function Home({setPage}) {
                 id={awareness.id}
                 thumbnail={awareness.thumbnail} 
                 category={awareness.category} 
-                subcategory={awareness.subcategory}  />))}
+                subcategory={awareness.subcategory}
+                miniDescription={awareness.miniDescription}
+                image={awareness.image}
+                visualCues={awareness.visualCues}
+                bibliography={awareness.bibliography}
+                />))}
 
         </div>
     </Box>

@@ -1,9 +1,7 @@
 #root {
   margin: 0 0 0 0;
-  background-image: url("./src/assets/image/background.jpg"); /* Image path */
-  background-size: cover; /* Ensures the image covers the entire element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
+  background-image: url("./src/assets/image/seamless_background.jpg"); /* Image path */
+  background-position: top; /* Centers the image */
 }
 
 @media (max-width: 600px) {
