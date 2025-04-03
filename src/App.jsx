@@ -6,6 +6,7 @@ import Home from './Home.jsx';
 import About from './About.jsx';
 import Method from './Method.jsx';
 import {useEffect} from 'react'
+import Button from '@mui/material/Button';
 
 function App() {
   const [page, setPage] = useState(null);
@@ -34,6 +35,9 @@ function App() {
     </Box>
     {(page == null) ? (<Home setPage={setPage} mySearch={mySearch} />) : page }
 
+    <div style={ {display: 'flex', alignContent:'center', alignItems: 'center', justifyContent: 'center', marginBottom: '2em'}}>
+    <Button variant="text" sx={{fontSize:11}} onClick={() => window.open('https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.15066', '_blank')}> This work is based on an article published in Computer Graphics Forum - 2024, as part of the Open Access State-of-the-Art Reports. Download it now. </Button>
+    </div>
     </>
   )
 }

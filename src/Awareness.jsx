@@ -21,18 +21,28 @@ function Awareness({category, subcategory, image, visualCues, bibliography, setP
   }, []);
 
   return (
-    < div style={{margin: 'auto', display: 'flex', alignContent: 'center', justifyContent: 'center'}}>
+    
+    < div style={{margin: 'auto', display: 'flex', alignContent: 'center', justifyContent: 'center',  width: '100vw'}}>
 
     <Box
         sx={{
+          overflowX: 'hidden',
           maxWidth: '1200px',
-          width: '100%',
+          width:  {
+            xs: '90%',
+            sm: '90%',
+            md: '90%',
+            lg: '100%'
+          }, 
           height: 'fit-content',
           borderRadius: 14,
           backgroundColor: '#00000030',
-          marginLeft:'0.8em',
+          marginLeft: '0.8em',
           marginRight:'0.8em',
-          padding: '7.2em', 
+          padding: {
+            xs: '2em',
+            sm: '7.2em',
+          },
           paddingTop: '5em',
           marginTop: '4em',
           marginBottom: '4em'
@@ -57,16 +67,16 @@ function Awareness({category, subcategory, image, visualCues, bibliography, setP
       Visual Cues
       </Typography>
 
-    <div style={{margin: 'auto', display: 'flex', alignContent: 'center', justifyContent: 'center', backgroundColor: "#77777780", borderRadius: 24}}>
+    <div style={{margin: 'auto', display: 'flex', alignContent: 'center', justifyContent: 'center' , borderRadius: 24}}>
       <img
         src={image}
         alt={category}
         loading="lazy"
-        style={{marginTop: '5em', marginBottom: '5em', maxWidth: '700px', width: '100%'}}
+        style={{marginTop: '0em', marginBottom: '0em', width: '100%'}}
       />
     </div>
 
-    <Typography variant="h3" sx={{ fontWeight: 300, marginTop:'2.5em'}} > 
+    <Typography variant="h3" sx={{ fontWeight: 300, marginTop:'1.5em'}} > 
       References
       </Typography>
 

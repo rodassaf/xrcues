@@ -23,8 +23,7 @@ function Home({setPage, mySearch}) {
 
     }, []);
 
-    useEffect(()=>{
-        console.log(mySearch)
+    useEffect(()=>{ 
        // Filter data based on the keyword (case-insensitive)
        setFilteredData( list.filter( (item) =>
         item.category.toLowerCase().includes(mySearch.toLowerCase())
