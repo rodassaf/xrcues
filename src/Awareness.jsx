@@ -5,7 +5,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 import Home from './Home.jsx';
 import {useEffect} from 'react'
 
-function Awareness({category, subcategory, image, visualCues, bibliography, setPage, description}) {
+function Awareness({category, subcategory, image, visualCues, bibliography, setPage, description, mySearch}) {
 
  function SubCat() {
     return(
@@ -39,7 +39,7 @@ function Awareness({category, subcategory, image, visualCues, bibliography, setP
         }}
     >
     <div style={{display: 'flex', alignItems: 'center'}}>
-      <ArrowBackIcon sx={{ fontSize: 40, marginRight: '0.3em', cursor: 'pointer', '&:hover': {color: '#999999'} }} onClick={() => setPage(<Home setPage={setPage}/>)} /> 
+      <ArrowBackIcon sx={{ fontSize: 40, marginRight: '0.3em', cursor: 'pointer', '&:hover': {color: '#999999'} }} onClick={() => setPage(<Home setPage={setPage} mySearch={mySearch} />)} /> 
 
       <Typography variant="h3" sx={{ fontWeight: 300}} > 
       {category}
@@ -53,16 +53,16 @@ function Awareness({category, subcategory, image, visualCues, bibliography, setP
       {description}
       </Typography>
     
-      <Typography variant="h3" sx={{ fontWeight: 300}} > 
+      <Typography variant="h3" sx={{ fontWeight: 300, marginBottom: '1.5em'}} > 
       Visual Cues
       </Typography>
 
-    <div style={{margin: 'auto', display: 'flex', alignContent: 'center', justifyContent: 'center'}}>
+    <div style={{margin: 'auto', display: 'flex', alignContent: 'center', justifyContent: 'center', backgroundColor: "#77777780", borderRadius: 24}}>
       <img
         src={image}
         alt={category}
         loading="lazy"
-        style={{marginTop: '5em', maxWidth: '700px', width: '100%'}}
+        style={{marginTop: '5em', marginBottom: '5em', maxWidth: '700px', width: '100%'}}
       />
     </div>
 

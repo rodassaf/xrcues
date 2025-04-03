@@ -7,13 +7,13 @@ import CardActionArea from '@mui/material/CardActionArea';
 import Awareness from './Awareness';
 
 
-export default function ActionAreaCard({thumbnail, category, subcategory, id, setPage, miniDescription, description, image, visualCues, bibliography}) {
-    const handleCardClick = (category, subcategory, image, visualCues, bibliography, description) => {
-        setPage(<Awareness category={category} subcategory={subcategory} image={image} visualCues={visualCues} bibliography={bibliography} setPage={setPage} description={description}/>)
+export default function ActionAreaCard({thumbnail, category, subcategory, id, setPage, miniDescription, description, image, visualCues, bibliography, mySearch}) {
+    const handleCardClick = (category, subcategory, image, visualCues, bibliography, description, mySearch) => {
+        setPage(<Awareness category={category} subcategory={subcategory} image={image} visualCues={visualCues} bibliography={bibliography} setPage={setPage} description={description} mySearch={mySearch}/>)
     };
 
     return (
-        <Card onClick={() => handleCardClick(category, subcategory, image, visualCues, bibliography, description )} 
+        <Card onClick={() => handleCardClick(category, subcategory, image, visualCues, bibliography, description, mySearch )} 
             sx={{
                 maxWidth: 345,
                 height: 400,

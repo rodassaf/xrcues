@@ -17,7 +17,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 const pages = ['XR.Awareness', 'Method' , 'About'];
 
 
-function ResponsiveAppBar( {getButtonCliked} ) {
+function ResponsiveAppBar( {getButtonCliked, setMySearch} ) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -89,7 +89,7 @@ function ResponsiveAppBar( {getButtonCliked} ) {
             
             <TextField 
                 hiddenLabel
-                onChange={()=>{console.log("a")}}
+                onChange={(e)=>{ setMySearch(e.target.value); }}
                 id="filled-hidden-label-small"
                 type="search"
                 defaultValue=""

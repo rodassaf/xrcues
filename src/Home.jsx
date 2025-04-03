@@ -4,8 +4,9 @@ import Box from '@mui/material/Box';
 import ActionAreaCard from './card.jsx';
 import {useState, useEffect} from 'react'
 
-function Home({setPage}) {
-    const [list, setList] = useState([])
+function Home({setPage, mySearch}) {
+    const [list, setList] = useState([]);
+    const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
 
@@ -13,10 +14,22 @@ function Home({setPage}) {
             .then(response => response.json())
             .then(data => {
                 setList(data.UserAwareness)
+                // Filter data based on the keyword (case-insensitive)
+                setFilteredData( data.UserAwareness.filter( (item) =>
+                item.category.toLowerCase().includes(mySearch.toLowerCase())
+                ))
             })
             .catch(error => console.error("Error fetching JSON:", error));
 
     }, []);
+
+    useEffect(()=>{
+        console.log(mySearch)
+       // Filter data based on the keyword (case-insensitive)
+       setFilteredData( list.filter( (item) =>
+        item.category.toLowerCase().includes(mySearch.toLowerCase())
+        ))
+    }, [mySearch])
 
     return (
         <> < Box sx = {{
@@ -57,7 +70,7 @@ function Home({setPage}) {
                 gap: '20px',
                 marginBottom: '4em'
             }}>
-            {list.map((awareness) => (<ActionAreaCard 
+            {filteredData.map((awareness) => (<ActionAreaCard 
                 setPage={setPage}
                 key={awareness.id}
                 id={awareness.id}
@@ -69,6 +82,7 @@ function Home({setPage}) {
                 visualCues={awareness.visualCues}
                 bibliography={awareness.bibliography}
                 description={awareness.description}
+                mySearch={mySearch}
                 />))}
 
         </div>
