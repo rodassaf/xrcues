@@ -10,7 +10,7 @@ function Home({setPage, mySearch}) {
 
     useEffect(() => {
 
-        fetch("./src/assets/json/awareness.json")
+        fetch("/assets/json/awareness.json")
             .then(response => response.json())
             .then(data => {
                 setList(data.UserAwareness)

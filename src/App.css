@@ -1,6 +1,6 @@
 #root {
   margin: 0 0 0 0;
-  background-image: url("./src/assets/image/seamless_background.jpg"); /* Image path */
+  background-image: url("/assets/image/seamless_background.jpg"); /* Image path */
   background-position: top; /* Centers the image */
 }
 
