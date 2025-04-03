@@ -1,7 +1,7 @@
 import './App.css'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import ActionAreaCard from './card.jsx';
+import ActionAreaCard from './Card.jsx';
 import {useState, useEffect} from 'react'
 
 function Home({setPage, mySearch}) {
