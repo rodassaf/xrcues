@@ -3,21 +3,34 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ArrowBackIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 import Home from './Home.jsx';
-import {useEffect} from 'react'
+import {useState, useEffect} from 'react'
+import Button from '@mui/material/Button';
 
 function Awareness({category, subcategory, image, visualCues, bibliography, setPage, description, mySearch}) {
 
- function SubCat() {
+  const [list, setList] = useState([]);
+  const [currentID, setCurrentID] = useState(null);
+
+  function SubCat() {
     return(
       <Typography variant="h4" sx={{ fontWeight: 300, marginTop: '0.5em'}} > 
       {subcategory}
       </Typography>
     );
- }
- let subCategory = <SubCat />;
+  }
+  let subCategory = <SubCat />;
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top-left
+
+    fetch("/assets/json/awareness.json")
+    .then(response => response.json())
+    .then(data => {
+        setList(data.UserAwareness)
+        setCurrentID( data.UserAwareness.findIndex(item => item.category === category && item.subcategory === subcategory) )
+    })
+    .catch(error => console.error("Error fetching JSON:", error));
+
   }, []);
 
   return (
@@ -48,8 +61,29 @@ function Awareness({category, subcategory, image, visualCues, bibliography, setP
           marginBottom: '4em'
         }}
     >
+<div>
+
+</div>
+    <div style={{display: 'flex',  marginBottom: '0.8em'}}>
+      <Button variant="text" 
+      onClick={ () => 
+        {
+         if(list.length != 0 && currentID != null && currentID > 0)
+          setPage(<Awareness key={currentID-1} category={list[currentID-1].category} subcategory={list[currentID-1].subcategory} image={list[currentID-1].image} visualCues={list[currentID-1].visualCues} bibliography={list[currentID-1].bibliography} setPage={setPage} description={list[currentID-1].description} mySearch={mySearch}  />)
+        }
+      }> Previous </Button>
+      <Button variant="text" onClick={() => setPage(<Home setPage={setPage} mySearch={mySearch} />)}> Home </Button>
+      <Button variant="text" 
+      onClick={ () => 
+        {
+         if(list.length != 0 && currentID != null && currentID < list.length-1)
+          setPage(<Awareness key={currentID+1} category={list[currentID+1].category} subcategory={list[currentID+1].subcategory} image={list[currentID+1].image} visualCues={list[currentID+1].visualCues} bibliography={list[currentID+1].bibliography} setPage={setPage} description={list[currentID+1].description} mySearch={mySearch}  />)
+        }
+      }> Next </Button>
+    </div>
+
     <div style={{display: 'flex', alignItems: 'center'}}>
-      <ArrowBackIcon sx={{ fontSize: 40, marginRight: '0.3em', cursor: 'pointer', '&:hover': {color: '#999999'} }} onClick={() => setPage(<Home setPage={setPage} mySearch={mySearch} />)} /> 
+      {/* <ArrowBackIcon sx={{ fontSize: 40, marginRight: '0.3em', cursor: 'pointer', '&:hover': {color: '#999999'} }} onClick={() => setPage(<Home setPage={setPage} mySearch={mySearch} />)} />  */}
 
       <Typography variant="h3" sx={{ fontWeight: 300}} > 
       {category}
